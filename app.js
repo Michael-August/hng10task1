@@ -5,7 +5,7 @@ const port = 3000
 const today = new Date()
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
 
-app.get('/api/hng10intern', (req, res) => {
+app.get('/api', (req, res) => {
 
     if (!req.query.slack_name) return res.status(400).json({ error: 'Slack name is required' });
     if (!req.query.track) return res.status(400).json({ error: 'Track is required' });
