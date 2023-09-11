@@ -15,8 +15,8 @@ app.get('/api/hng10intern', (req, res) => {
         current_day: days[today.getDay()],
         utc_time: today.toISOString(),
         track: req.query.track,
-        github_file_url: "https://github.com/username/repo/blob/main/file_name.ext",
-        github_repo_url: "https://github.com/username/repo",
+        github_file_url: "https://github.com/Michael-August/hng10task1/blob/main/app.js",
+        github_repo_url: "https://github.com/Michael-August/hng10task1",
     }
     res.status(200).json(response)
 })
